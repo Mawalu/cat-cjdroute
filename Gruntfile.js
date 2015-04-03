@@ -3,6 +3,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jshint: {
       files: ['Gruntfile.js', 'lib/**/*.js'],
+      options: {
+        "undef": true,
+        "unused": true,
+        "predef": [ "module", "require" ]
+      }
     },
     watch: {
       files: ['<%= jshint.files %>'],
