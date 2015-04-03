@@ -23,5 +23,9 @@
     "async": "^0.9.0",
     "cjdns-admin": "^0.1.1",
     "lodash": "^3.6.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.1"
   }
 }
