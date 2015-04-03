@@ -12,11 +12,20 @@ module.exports = function(grunt) {
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint']
+    },
+    jsbeautifier: {
+      files: ['<%= jshint.files %>'],
+      options: {
+        js: {
+          indentSize: 2,
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks("grunt-jsbeautifier");
 
   grunt.registerTask('default', ['jshint']);
 
