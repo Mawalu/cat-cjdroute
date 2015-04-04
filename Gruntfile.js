@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
+      tasks: ['jsbeautifier', 'jshint']
     },
     jsbeautifier: {
       files: ['<%= jshint.files %>'],
@@ -27,6 +27,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks("grunt-jsbeautifier");
 
-  grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('build', ['jshint', 'jsbeautifier']);
 
 };
