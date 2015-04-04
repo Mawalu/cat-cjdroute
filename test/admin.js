@@ -77,7 +77,7 @@ describe('Peers', function() {
       },
       function(callback) {
         describe('#listPeers', function() {
-          it('should retunr a list not including the testUser', function(done) {
+          it('should return a list not including the testUser', function(done) {
             peers.listPeers(connection, function(err, peers) {
               peers.should.not.containEql(testUser.user);
               done(err);

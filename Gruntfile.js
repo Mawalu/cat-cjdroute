@@ -22,7 +22,11 @@ module.exports = function(grunt) {
       }
     },
     mochaTest: {
-      src: ['test/**/*.js']
+      src: ['test/**/*.js'],
+      options: {
+        timeout: 15000,
+        color: true
+      }
     }
   });
 
