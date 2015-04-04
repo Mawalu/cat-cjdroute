@@ -20,12 +20,16 @@ module.exports = function(grunt) {
           indentSize: 2,
         }
       }
+    },
+    mochaTest: {
+      src: ['test/**/*.js']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks("grunt-jsbeautifier");
+  grunt.loadNpmTasks('grunt-mocha-test');
 
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('build', ['jshint', 'jsbeautifier']);
