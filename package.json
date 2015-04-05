@@ -1,6 +1,6 @@
 {
   "name": "cat-cjdroute",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A cjdroute adapter for cat, the cjdns admin tool",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,11 @@
     "url": "https://github.com/mawalu/cat-cjdroute"
   },
   "keywords": [
-    "cjdns"
+    "cjdns",
+    "cat"
   ],
   "author": "mawalu",
-  "license": "ISC",
+  "license": "GPL",
   "bugs": {
     "url": "https://github.com/mawalu/cat-cjdroute/issues"
   },
