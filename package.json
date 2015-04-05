@@ -1,6 +1,6 @@
 {
   "name": "cat-cjdroute",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A cjdroute adapter for cat, the cjdns admin tool",
   "main": "index.js",
   "scripts": {
